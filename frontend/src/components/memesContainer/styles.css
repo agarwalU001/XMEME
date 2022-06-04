@@ -1,0 +1,36 @@
+.memes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 1rem;
+  margin-top: 50px;
+}
+.no-posts {
+  margin: auto;
+}
+@media (max-width: 1200px) {
+  .memes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .no-posts {
+    margin: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .memes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .memes-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
